@@ -29,3 +29,18 @@ end
 DNA_strand("AAAA")
 DNA_strand("ATTGC")
 DNA_strand("GTAT")
+
+puts "#" * 50
+
+flash = { success: "It worked!", danger: "It failed"}
+flash.each do |key, value|
+  puts "Key #{key.inspect} has value #{value}"
+end
+
+puts "#" * 50
+
+person1 = {first: "John", last: "Smith"}
+person2 = {first: "Rebecca", last: "Adams"}
+person3 = {first: "Michael", last: "Chow"}
+params = { father: person1, mother: person2, child: person3 }
+p params[:father]
